@@ -8,6 +8,7 @@ public class JavaDsaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JavaDsaApplication.class, args);
+		System.out.println(Thread.currentThread());
 	}
 
 }
