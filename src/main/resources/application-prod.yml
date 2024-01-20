@@ -4,3 +4,13 @@ spring:
     name: Java_DSA
 server:
   port: 1111
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+       
+  endpoint:
+    shutdown:
+      enabled: true
