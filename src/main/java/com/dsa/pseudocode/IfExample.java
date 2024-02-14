@@ -3,6 +3,7 @@ package com.dsa.pseudocode;
 
 public class IfExample {
     /** 
+     * PseuoCode for the program,
      * start
      * input sal
      * if sal > 10000
