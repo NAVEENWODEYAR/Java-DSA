@@ -1,6 +1,7 @@
-package com.dsa.forloop;
+package com.dsa.iterations;
 
 /**
+ * @author Naveen K Wodeyar
  * for loop syntax,
  */
 public class ForExample {
