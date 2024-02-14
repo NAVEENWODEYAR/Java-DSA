@@ -19,5 +19,4 @@ public class LargetAmong3Numbers {
 	maxIn3Nums(50, 50, 50);
 	System.out.println(Math.max(4, 5));
     }
-
 }
