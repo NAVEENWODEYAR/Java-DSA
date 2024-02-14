@@ -13,9 +13,14 @@ public class IfExample {
      * 	outprint "sal"
      * exit
      */
-    public static void main(String[] args) {
-	// TODO Auto-generated method stub
-
+    static void calculateBonus(int sal) {
+	if(sal > 10000)
+	    System.out.println(sal = sal + 200);
+	else
+	    System.out.println(sal = sal + 100);
     }
-
+    
+    public static void main(String[] args) {
+	calculateBonus(9543);
+    }
 }
