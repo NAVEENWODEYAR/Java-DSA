@@ -9,12 +9,13 @@ public class Calculator {
 	int dis=0;
 	
 	while(true) {
+	    System.out.println("Enter the operator:");
 	    char op = sc.next().trim().charAt(0);
 	    
 	    if(op == '+' || op =='-' || op =='*' || op =='/' || op =='%') {
-		System.out.println("Enter the first number");
+		System.out.println("Enter the first number:");
 		int a = sc.nextInt();
-		System.out.println("Enter the first number");
+		System.out.println("Enter the first number:");
 		int b = sc.nextInt();
 		
 		if(op == '+') {
@@ -35,8 +36,12 @@ public class Calculator {
 		}
 	    }
 	    else if(op =='x' || op =='X') {
+		break;
+	    }else
+	    {		
 		System.out.println("\n Invalid choice");
 	    }
+	    System.out.println(dis);
 	}
     }
     public static void main(String[] args) {
