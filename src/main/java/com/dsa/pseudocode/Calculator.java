@@ -13,9 +13,8 @@ public class Calculator {
 	    char op = sc.next().trim().charAt(0);
 	    
 	    if(op == '+' || op =='-' || op =='*' || op =='/' || op =='%') {
-		System.out.println("Enter the first number:");
+		System.out.println("\nEnter the numbers:");
 		int a = sc.nextInt();
-		System.out.println("Enter the first number:");
 		int b = sc.nextInt();
 		
 		if(op == '+') {
