@@ -15,8 +15,10 @@ public class LargetAmong3Numbers {
     
     public static void main(String[] args) {
 	System.out.println("*********");
+	int a=5,b=4;
 	maxIn3Nums(1, 2, 3);
-	maxIn3Nums(50, 50, 50);
-	System.out.println(Math.max(4, 5));
+	System.out.println(Math.max(a, b));
+	// ternary operator,
+	System.out.println((a>b?a:b));
     }
 }
