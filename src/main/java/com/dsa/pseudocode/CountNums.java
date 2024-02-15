@@ -3,7 +3,7 @@ package com.dsa.pseudocode;
 public class CountNums {
     
     /**
-     * find the occurrences of an number,
+     * find the number of occurrences of an number,
      */
     static void numOccurrence(int n,int m) {
 	int count=0;

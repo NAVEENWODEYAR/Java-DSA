@@ -3,7 +3,9 @@ package com.dsa.pseudocode;
 import java.util.Scanner;
 
 public class Calculator {
-
+    /**
+     * Calculator ex,
+     */
     static void calci() {
 	Scanner sc = new Scanner(System.in);
 	int dis=0;
