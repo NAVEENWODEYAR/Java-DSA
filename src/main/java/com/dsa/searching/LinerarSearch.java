@@ -1,5 +1,8 @@
 package com.dsa.searching;
 
+/**
+ * linearSearch program,
+ */
 public class LinerarSearch {
     
     static int linearSearch(int ele,int[] arr) {
