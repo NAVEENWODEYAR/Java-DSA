@@ -2,7 +2,7 @@ package com.dsa.iterations;
 
 public class DoWhileEx {
     /**
-     * do while loop,
+     * do, while loop,
      */
     static void doWhileEx(int n) {
 	int i=0;

@@ -21,9 +21,9 @@ public class ArraysEx {
 			   numLst.add(0);
 			   numLst.add(2);
 			   numLst.add(4);
-			   numLst.add(6);
 			   numLst.add(8);
 	System.out.println(numLst);
+	numLst.forEach(System.out::println);
 			   
     }
     
