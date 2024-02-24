@@ -3,7 +3,7 @@ spring:
   application:
     name: Java_DSA
 server:
-  port: 1111
+  port: 22222
 
 management:
   endpoints:
