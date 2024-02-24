@@ -3,9 +3,8 @@ package com.dsa.iterations;
 import java.util.Scanner;
 
 public class SwitchStatements2 {
-    /**
-     * Switch conditions and statements,
-     */
+   
+    //Switch conditions and statements,
     public static void main(String[] args) {
 	System.out.println("*****");
 	Scanner sc = new Scanner(System.in);

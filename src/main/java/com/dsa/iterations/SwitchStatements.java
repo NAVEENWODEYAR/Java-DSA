@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SwitchStatements {
     /**
-     * Switch conditions and statements,
+     * Switch condition and statements,
      */
     public static void main(String[] args) {
 	System.out.println("*****");
