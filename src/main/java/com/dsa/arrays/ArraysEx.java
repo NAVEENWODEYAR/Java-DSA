@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArraysEx {
     /**
-     * array's & arrayList,
+     * Array's & ArrayList,
      */
     static void arraysDisplay() {
 	int[] regNumbers = {1,2,3,4,5,};
@@ -15,7 +15,7 @@ public class ArraysEx {
 	System.out.println(Arrays.toString(studentNames));
 	
 	// arrayList.,
-	List<String> arrLst = Arrays.asList("Ammy","Bella","Clara","Dora");
+	List<String> arrLst = Arrays.asList("Ammy","Bella","Clara","Dora","Emma");
 	System.out.println(arrLst);
 	ArrayList<Integer> numLst = new ArrayList<>(5);
 			   numLst.add(0);
@@ -25,8 +25,7 @@ public class ArraysEx {
 	ArrayList<Integer> numLst1 = new ArrayList<>(5);
 			   numLst1.addAll(numLst);
 	System.out.println(numLst+":"+numLst1);
-	numLst.forEach(System.out::println);
-			   
+	numLst.forEach(System.out::println);		   
     }
     
     public static void main(String[] args) {
