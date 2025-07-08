@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: Java_DSA
+    name: Java_DSA_DEMO_APP
 server:
   port: 22222
 
