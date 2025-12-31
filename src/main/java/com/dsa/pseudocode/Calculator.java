@@ -11,6 +11,7 @@ public class Calculator {
 	int dis=0;
 	
 	while(true) {
+     System.out.println("Calculator Program");
 	    System.out.println("Enter the operator:");
 	    char op = sc.next().trim().charAt(0);
 	    
