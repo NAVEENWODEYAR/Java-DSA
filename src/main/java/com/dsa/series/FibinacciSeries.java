@@ -16,7 +16,7 @@ public class FibinacciSeries {
     }
     
     public static void main(String[] args) {
-	System.out.println("************");
+	System.out.println("***** Fibonacci Series *******");
 	fiboNacciSeries(5);
     }
 
