@@ -22,6 +22,7 @@ public class ArraysEx {
 			   numLst.add(2);
 			   numLst.add(4);
 			   numLst.add(8);
+			   numLst.add(6);
 	ArrayList<Integer> numLst1 = new ArrayList<>(5);
 			   numLst1.addAll(numLst);
 	System.out.println(numLst+":"+numLst1);
