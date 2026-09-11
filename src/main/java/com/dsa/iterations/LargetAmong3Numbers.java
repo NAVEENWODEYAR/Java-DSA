@@ -14,7 +14,7 @@ public class LargetAmong3Numbers {
     }
     
     public static void main(String[] args) {
-	System.out.println("*********");
+	System.out.println("**** Largest numbers *****");
 	int a=5,b=4;
 	maxIn3Nums(1, 2, 3);
 	System.out.println(Math.max(a, b));

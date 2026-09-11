@@ -30,7 +30,7 @@ public class ArraysEx {
     }
     
     public static void main(String[] args) {
-	System.out.println("Arrays");
+	System.out.println("Arrays, ArrayList");
 	 arraysDisplay();
     }
 
