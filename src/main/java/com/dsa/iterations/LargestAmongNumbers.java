@@ -1,6 +1,6 @@
 package com.dsa.iterations;
 
-public class LargetAmong3Numbers {
+public class LargestAmongNumbers {
     /**
      * find the maximum number,
      */
