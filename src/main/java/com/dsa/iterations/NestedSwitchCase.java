@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class NestedSwitchCase {
 
-    /**
-     *Nested switch case, 
-     */
+    // Nested switch case, 
     public static void main(String[] args) {
 	System.out.println("**********");
+	
 	Scanner sc = new Scanner(System.in);
 	System.out.println("\nEnter student details:");
 	  char branch = sc.next().trim().charAt(0);               
 	  int collegeYear = sc.nextInt();
+	  
 	        switch( collegeYear ) {  
 	            case 1:  
 	                System.out.println("English, Maths, Science");  
