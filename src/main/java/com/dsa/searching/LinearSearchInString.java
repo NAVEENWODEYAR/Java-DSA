@@ -31,15 +31,12 @@ package com.dsa.searching;
   * @param ch the character to search for
   * @param st the String in which the character is searched
   * @return {@code true} if the character is present;
-  * ```
-        {@code false} otherwise
-    ```
-
   */
   static boolean isCharPresent(char ch, String st) {
 
    // If the String is empty, the character cannot be present.
    if (st.length() == 0) {
+	   System.out.println("Input string length must be greater than 1.");
        return false;
    }
 
@@ -48,6 +45,7 @@ package com.dsa.searching;
 
        // Compare the current character with the target character.
        if (st.charAt(i) == ch) {
+    	   System.out.println("\n ******* \n");
            return true;
        }
    }
