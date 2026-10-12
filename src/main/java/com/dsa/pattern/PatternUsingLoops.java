@@ -1,75 +1,99 @@
 package com.dsa.pattern;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PatternUsingLoops {
 
     /*
-     * This method prints a square pattern.
+     * Prints a square star pattern.
      *
-     * For example, if n = 3:
+     * Example: n = 3
      *
-     * * * *
-     * * * *
-     * * * *
-     *
-     * Actually, because the loops use < n,
-     * it will print 3 rows and 3 columns.
+     * * * 
+     * * * 
+     * * * 
      */
     static void pattern1(int n) {
 
-        // Outer loop controls the number of rows
+        // Guard clause: reject invalid pattern sizes
+        if (n < 0) {
+            System.out.println("Error: Pattern size cannot be negative.");
+            return;
+        }
+
+        // Outer loop controls rows
         for (int i = 0; i < n; i++) {
 
-            // Inner loop controls the number of columns
+            // Inner loop controls columns
             for (int j = 0; j < n; j++) {
-
-                // Print star on the same line
                 System.out.print("* ");
             }
 
-            // Move to the next line after one complete row
+            // Move to the next line
             System.out.println();
         }
     }
 
-    
     public static void main(String[] args) {
 
-        // Create Scanner object to take input from the user
-        Scanner sc = new Scanner(System.in);
+        // Automatically closes Scanner when finished
+        try (Scanner sc = new Scanner(System.in)) {
 
-        /*
-         * First input represents the number of test cases.
-         *
-         * Example:
-         * 3
-         *
-         * This means we want to run our pattern program 3 times.
-         */
-        System.out.print("Enter number of test cases: ");
-        int t = sc.nextInt();
+            // Guard clause: ensure input is available
+            if (!sc.hasNextInt()) {
+                System.out.println(
+                    "Error: Please enter a valid integer for test cases."
+                );
+                return;
+            }
 
-        /*
-         * Loop through all test cases.
-         *
-         * If t = 3, this loop runs 3 times:
-         * Test Case 1
-         * Test Case 2
-         * Test Case 3
-         */
-        for (int testCase = 1; testCase <= t; testCase++) {
+            int t = sc.nextInt();
 
-            System.out.println("Enter the input for the loop: ");
-            int n = sc.nextInt();
-            // Call the pattern method
-            pattern1(n);
+            // Guard clause: validate number of test cases
+            if (t <= 0) {
+                System.out.println(
+                    "Error: Number of test cases must be positive."
+                );
+                return;
+            }
 
-            // Print an empty line between test cases
-            System.out.println();
+            // Process each test case
+            for (int testCase = 1; testCase <= t; testCase++) {
+
+                System.out.println(
+                    "Enter the pattern size for test case "
+                    + testCase + ":"
+                );
+
+                // Guard clause: validate input availability and type
+                if (!sc.hasNextInt()) {
+                    System.out.println(
+                        "Error: Expected an integer for pattern size."
+                    );
+                    return;
+                }
+
+                int n = sc.nextInt();
+
+                // Guard clause: reject negative pattern sizes
+                if (n < 0) {
+                    System.out.println(
+                        "Error: Pattern size cannot be negative."
+                    );
+                    return;
+                }
+
+                // Print the pattern
+                pattern1(n);
+
+                // Separate test cases
+                System.out.println();
+            }
+
+        } catch (InputMismatchException e) {
+            // Fallback for unexpected invalid numeric input
+            System.out.println("Error: Invalid input format.");
         }
-
-        // Close the Scanner object
-        sc.close();
     }
 }
