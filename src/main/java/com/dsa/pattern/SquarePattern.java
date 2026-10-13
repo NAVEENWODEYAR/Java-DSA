@@ -3,7 +3,7 @@ package com.dsa.pattern;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class PatternUsingLoops {
+public class SquarePattern {
 
     /*
      * Prints a square star pattern.
