@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class SquarePattern {
 
+	static {
+		System.out.println("Console Message: Class loaded successfully. Initializing program...");
+		System.exit(0);}
+	
     /*
      * Prints a square star pattern.
      *
@@ -42,45 +46,33 @@ public class SquarePattern {
 
             // Guard clause: ensure input is available
             if (!sc.hasNextInt()) {
-                System.out.println(
-                    "Error: Please enter a valid integer for test cases."
-                );
+                System.out.println("Error: Please enter a valid integer for test cases.");
                 return;
             }
 
-            int t = sc.nextInt();
 
             // Guard clause: validate number of test cases
+            int t = sc.nextInt();
             if (t <= 0) {
-                System.out.println(
-                    "Error: Number of test cases must be positive."
-                );
+                System.out.println("Error: Number of test cases must be positive.");
                 return;
             }
 
             // Process each test case
             for (int testCase = 1; testCase <= t; testCase++) {
 
-                System.out.println(
-                    "Enter the pattern size for test case "
-                    + testCase + ":"
-                );
-
+                System.out.println("Enter the pattern size for test case "+ testCase + ":");
                 // Guard clause: validate input availability and type
                 if (!sc.hasNextInt()) {
-                    System.out.println(
-                        "Error: Expected an integer for pattern size."
-                    );
+                    System.out.println("Error: Expected an integer for pattern size.");
                     return;
                 }
 
-                int n = sc.nextInt();
 
                 // Guard clause: reject negative pattern sizes
+                int n = sc.nextInt();
                 if (n < 0) {
-                    System.out.println(
-                        "Error: Pattern size cannot be negative."
-                    );
+                    System.out.println("Error: Pattern size cannot be negative.");
                     return;
                 }
 
@@ -93,7 +85,7 @@ public class SquarePattern {
 
         } catch (InputMismatchException e) {
             // Fallback for unexpected invalid numeric input
-            System.out.println("Error: Invalid input format.");
+            System.out.println("Error: Invalid input format."+e);
         }
     }
 }
