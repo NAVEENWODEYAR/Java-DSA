@@ -5,10 +5,15 @@ import java.util.List;
 
 /**
  * Demonstrates how to avoid ConcurrentModificationException by creating an independent copy.
+ * 
+ * @author NaveenWodeyar
+ * @date 24-Oct-2026 12:39:54 am
  */
+
 public class ConcurrentModificationDemo {
 
     public static void main(String[] args) {
+    	
         // Initialize the master list
         List<String> masterList = new ArrayList<>(List.of("Apple", "Banana", "Cherry", "Date"));
 
@@ -20,5 +25,13 @@ public class ConcurrentModificationDemo {
 
         // Works successfully! Output: [Banana, Cherry]
         System.out.println(subList); 
+        subList.add(null);
+        masterList.addAll(subList);
+        
+        System.out.println(subList); 
+        System.out.println(masterList); 
+
+        
+        
     }
 }

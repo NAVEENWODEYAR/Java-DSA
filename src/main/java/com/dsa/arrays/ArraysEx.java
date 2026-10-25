@@ -9,8 +9,8 @@ import java.util.List;
  * on Java Arrays and Collections (specifically {@link ArrayList}), 
  * including initialization, conversion, copying, and iteration.
  * 
- * @author Your Name
- * @version 1.0
+ * @author NaveenWodeyar
+ * @date 24-Oct-2026 12:39:54 am
  */
 public class ArraysEx {
 	

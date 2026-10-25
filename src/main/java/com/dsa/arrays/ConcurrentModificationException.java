@@ -6,6 +6,9 @@ import java.util.List;
 /**
  * Demonstrates ConcurrentModificationException when a subList view 
  * is accessed after structurally modifying its backing parent list.
+ *  
+ * @author NaveenWodeyar
+ * @date 24-Oct-2026 12:39:54 am
  */
 public class ConcurrentModificationException {
 
