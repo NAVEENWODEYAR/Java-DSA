@@ -22,6 +22,9 @@ public class ConcurrentModificationDemo {
 
         // Structurally modify the parent list (safe now because subList is independent)
         masterList.add("Elderberry");
+        masterList.remove("remove");
+        masterList.add("remove");
+
 
         // Works successfully! Output: [Banana, Cherry]
         System.out.println(subList); 
@@ -29,9 +32,7 @@ public class ConcurrentModificationDemo {
         masterList.addAll(subList);
         
         System.out.println(subList); 
-        System.out.println(masterList); 
-
-        
+        System.out.println(masterList);
         
     }
 }
