@@ -14,7 +14,12 @@ public class ArrayExceptionsDemo {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Error: Invalid array index!");
             System.out.println("Message: " + e.getMessage());
-        }
+        }finally {
+            System.out.println("Exception in Finally Blcok");
+            System.out.println(numbers[10]);
+            System.out.println("Finally Blcok");
+
+		}
 
         System.out.println();
 
